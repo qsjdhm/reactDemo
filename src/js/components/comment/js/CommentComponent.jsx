@@ -31,8 +31,8 @@ export default class CommentComponent extends React.Component {
 					<div className="comment_text">{this.props.text}</div>
 				</div>
 				<div className="comment_act">
-					<a className="reply" href="javascript:void(0)" onClick={this.handleReply}>回复</a>
-					<a className="cancel" href="javascript:void(0)" style={{display: this.state.display}}>取消回复</a>
+					<a className="reply" href="javascript:void(0)" onClick={this.handleReply}>回复1</a>
+					<a className="cancel" href="javascript:void(0)" style={{display: this.state.display}}>取消回复1</a>
 				</div>
 			</div>
 		);
