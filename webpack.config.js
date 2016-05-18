@@ -57,9 +57,20 @@ module.exports = {
 	},
     plugins: [
         new ExtractTextPlugin("css/[name].css", {allChunks: true}),
-        new HtmlWebpackPlugin({
-            title: 'my test'
-        })
+        //new HtmlWebpackPlugin({
+        //    title: 'my test'
+        //})
+        new HtmlWebpackPlugin({                        //根据模板插入css/js等生成最终HTML
+            //favicon:'./src/img/favicon.ico', //favicon路径
+            filename: './indexd.html',    //生成的html存放路径，相对于 path
+            template:'./src/index.html',    //html模板路径
+            inject:true,    //允许插件修改哪些内容，包括head与body
+            hash:true,    //为静态资源生成hash值
+            minify:{    //压缩HTML文件
+                removeComments:true,    //移除HTML中的注释
+                collapseWhitespace:false    //删除空白符与换行符
+            }
+         })
     ]
 
 

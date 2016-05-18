@@ -25,7 +25,7 @@ export default class TableComponent extends React.Component {
     render() {
         return (
             <div style={{width: 500, margin: '100px auto'}}>
-                <Table columns={this.state.columns} dataSource={this.state.dataSource} />
+                <Table columns={this.props.tableColumns} dataSource={this.props.tableData} />
             </div>
         );
     }
