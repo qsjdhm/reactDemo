@@ -3,20 +3,19 @@
  */
 
 
-// 在这里引用less会打包、编译合并到dist/css中
 import React from 'react';
 import ReactDOM from 'react-dom';
-import SelectComponent from './components/select/js/SelectComponent';
-import TableComponent from './components/table/js/TableComponent';
+import SelectComponent from '../components/select/js/SelectComponent';
+import TableComponent from '../components/table/js/TableComponent';
 
-export default class IndexPage extends React.Component {
+export default class EditNotePage extends React.Component {
     constructor(props) {
         super(props);
 
         const selectData = [
-            {"id":"jack", "name":"杰克1"},
-            {"id":"lucy", "name":"露西2"},
-            {"id":"tom" , "name":"汤姆3"}
+            {"id":"jack", "name":"杰克11"},
+            {"id":"lucy", "name":"露西22"},
+            {"id":"tom" , "name":"汤姆33"}
         ];
 
         const tableColumns = [{
@@ -64,7 +63,7 @@ export default class IndexPage extends React.Component {
                 key: '11',
                 name: '胡彦斌'+v,
                 age: 321,
-                address: '西湖区湖底公园11号'
+                address: '西湖区湖底公园111号'
             }]
         });
     }

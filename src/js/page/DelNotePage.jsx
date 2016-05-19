@@ -3,13 +3,12 @@
  */
 
 
-// 在这里引用less会打包、编译合并到dist/css中
 import React from 'react';
 import ReactDOM from 'react-dom';
-import SelectComponent from './components/select/js/SelectComponent';
-import TableComponent from './components/table/js/TableComponent';
+import SelectComponent from '../components/select/js/SelectComponent';
+import TableComponent from '../components/table/js/TableComponent';
 
-export default class IndexPage extends React.Component {
+export default class DelNotePage extends React.Component {
     constructor(props) {
         super(props);
 
