@@ -3,7 +3,7 @@
  */
 
 import React from 'react';
-import { Select, Option  } from 'antd';
+import { Select } from 'antd';
 import 'antd/dist/antd.css';
 
 
@@ -22,7 +22,7 @@ export default class SelectComponent extends React.Component {
     render() {
         const optionItems = this.props.data.map(function(item){
             return (
-                <Option value={item.id}>{item.name}</Option>
+                <Select.Option value={item.id}>{item.name}</Select.Option>
             );
         });
 

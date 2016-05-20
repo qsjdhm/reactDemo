@@ -4,7 +4,7 @@
 
 import '../../css/page.css';
 
-import { Menu, Breadcrumb, Icon, SubMenu } from 'antd';
+import { Menu, Breadcrumb, Icon } from 'antd';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Link } from 'react-router';
