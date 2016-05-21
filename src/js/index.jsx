@@ -15,27 +15,29 @@ import {
     hashHistory
 } from 'react-router';
 
-import DelNotePage from './page/DelNotePage';
-import EditNotePage from './page/EditNotePage';
-import Index from './page/Index';
+import MainPage from './page/MainPage';
+import IndexPage from './page/IndexPage';
+import DelNotePage from './page/note/DelNotePage';
+import EditNotePage from './page/note/EditNotePage';
+
+import NotFoundPage from './page/NotFoundPage';
+
+var routes = (
+	<Router history={hashHistory}>
+		<Route path="/" component={MainPage}>
+			<IndexRoute name="home" component={IndexPage}/>
+			<Route name="del"  path="/del"  component={DelNotePage}/>
+			<Route name="edit" path="/edit" component={EditNotePage}/>
+		</Route>
+		<Route path="*" component={NotFoundPage}/>
+	</Router>
+);
+ReactDOM.render(routes, document.getElementById("aaa"));
 
 
 
-var App = React.createClass({
-    render: function() {
-        return this.props.children;
-    }
-});
 
-ReactDOM.render((
-    <Router history={hashHistory}>
-        <Route path="/" component={App}>
-            <IndexRoute name="home" component={Index}/>
-            <Route name="del"  path="/del"  component={DelNotePage}/>
-            <Route name="edit" path="/edit" component={EditNotePage}/>
-        </Route>
-    </Router>
-), document.getElementById("aaa"));
+
 
 
 

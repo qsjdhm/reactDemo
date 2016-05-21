@@ -5,8 +5,8 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import SelectComponent from '../components/select/js/SelectComponent';
-import TableComponent from '../components/table/js/TableComponent';
+import SelectComponent from '../../components/select/js/SelectComponent';
+import TableComponent from '../../components/table/js/TableComponent';
 
 export default class EditNotePage extends React.Component {
     constructor(props) {
