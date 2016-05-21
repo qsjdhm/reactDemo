@@ -8,21 +8,15 @@ import '../css/page.css';
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {
-    Router,
-    Route,
-    IndexRoute,
-    hashHistory
-} from 'react-router';
+import { Router, Route, IndexRoute, hashHistory } from 'react-router';
 
-import MainPage from './page/MainPage';
-import IndexPage from './page/IndexPage';
-import DelNotePage from './page/note/DelNotePage';
+import MainPage     from './page/MainPage';
+import IndexPage    from './page/IndexPage';
+import DelNotePage  from './page/note/DelNotePage';
 import EditNotePage from './page/note/EditNotePage';
-
 import NotFoundPage from './page/NotFoundPage';
 
-var routes = (
+const routes = (
 	<Router history={hashHistory}>
 		<Route path="/" component={MainPage}>
 			<IndexRoute name="home" component={IndexPage}/>
@@ -32,6 +26,7 @@ var routes = (
 		<Route path="*" component={NotFoundPage}/>
 	</Router>
 );
+
 ReactDOM.render(routes, document.getElementById("aaa"));
 
 

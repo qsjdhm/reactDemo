@@ -19,14 +19,14 @@ export default class EditNotePage extends React.Component {
         ];
 
         const tableColumns = [{
-            title: '姓名',
+            title: '姓名1',
             dataIndex: 'name',
             render: text => <a href="#">{text}</a>
         }, {
-            title: '年龄',
+            title: '年龄1',
             dataIndex: 'age'
         }, {
-            title: '住址',
+            title: '住址1',
             dataIndex: 'address'
         }];
         const tableData = [{

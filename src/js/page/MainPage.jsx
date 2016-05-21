@@ -25,7 +25,7 @@ export default class MainPage extends React.Component {
 			              defaultSelectedKeys={['1']} defaultOpenKeys={['sub1']}>
 				        <Menu.SubMenu key="sub1" title={<span><Icon type="user" />导航一</span>}>
 					        <Menu.Item key="1"><Link to="/del">About</Link></Menu.Item>
-					        <Menu.Item key="2"><Link to="/">About</Link></Menu.Item>
+					        <Menu.Item key="2"><Link to="/edit">About</Link></Menu.Item>
 					        <Menu.Item key="3">选项3</Menu.Item>
 					        <Menu.Item key="4">选项4</Menu.Item>
 				        </Menu.SubMenu>

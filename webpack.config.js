@@ -7,10 +7,6 @@ module.exports = {
     //        //支持数组形式，将加载数组中的所有模块，但以最后一个模块作为输出
     //    page2: path.resolve(__dirname, './src/js/hello.jsx')
     //},
-    //output: {
-    //    path: path.resolve(__dirname, './dist/js'),
-    //    filename: "[name].bundle.js"
-    //},
 
 	entry: path.resolve(__dirname, './src/js/index.jsx'),
 	output: {
@@ -57,13 +53,10 @@ module.exports = {
 	},
     plugins: [
         new ExtractTextPlugin("css/[name].css", {allChunks: true}),
-        //new HtmlWebpackPlugin({
-        //    title: 'my test'
-        //})
         new HtmlWebpackPlugin({                        //根据模板插入css/js等生成最终HTML
             //favicon:'./src/img/favicon.ico', //favicon路径
-            filename: './indexd.html',    //生成的html存放路径，相对于 path
-            template:'./src/index.html',    //html模板路径
+            filename: './index.html',    //生成的html存放路径，相对于 path
+            template:'./src/template/index.html',    //html模板路径
             inject:true,    //允许插件修改哪些内容，包括head与body
             hash:true,    //为静态资源生成hash值
             minify:{    //压缩HTML文件
