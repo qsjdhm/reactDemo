@@ -55,6 +55,18 @@ export default class EditNotePage extends React.Component {
         this.selected = this.selected.bind(this);
     }
 
+
+    componentWillMount() {
+        this.setState({
+            tableData : [{
+                key: '11',
+                name: '212121胡彦斌',
+                age: 321,
+                address: '西湖区湖底公园111号'
+            }]
+        });
+    }
+
     selected(v){
         console.info(v);
 

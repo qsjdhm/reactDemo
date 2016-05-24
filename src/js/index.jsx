@@ -20,8 +20,8 @@ const routes = (
 	<Router history={hashHistory}>
 		<Route path="/" component={MainPage}>
 			<IndexRoute name="home" component={IndexPage}/>
-			<Route name="del"  path="/del"  component={DelNotePage}/>
-			<Route name="edit" path="/edit" component={EditNotePage}/>
+			<Route name="del"  path="del"  component={DelNotePage}/>
+			<Route name="edit" path="edit" component={EditNotePage}/>
 		</Route>
 		<Route path="*" component={NotFoundPage}/>
 	</Router>
